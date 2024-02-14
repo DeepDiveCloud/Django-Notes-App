@@ -18,7 +18,7 @@ pipeline {
             steps{
             gitCheckout(
                 branch: "main",
-                url: "https://github.com/praveen1994dec/Java_app_3.0.git"
+                url: "https://github.com/DeepDiveCloud/Django-Notes-App.git"
             }
         }
          stage('Unit Test maven'){
@@ -118,7 +118,7 @@ pipeline {
         stage("Deploy"){
             steps {
                 echo "Deploying the container"
-                sh "docker run -d -p 8000:8000 sudheerbaraker/my-note-app:latest"
+                sh "docker run -d -p 8000:8000 maxjith/my-note-app:latest"
                 
             }
         }
