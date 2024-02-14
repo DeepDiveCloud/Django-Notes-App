@@ -19,6 +19,7 @@ pipeline {
             gitCheckout(
                 branch: "main",
                 url: "https://github.com/DeepDiveCloud/Django-Notes-App.git"
+                )
             }
         }
          stage('Unit Test maven'){
